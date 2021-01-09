@@ -1,0 +1,21 @@
+{
+    "editor.tabSize": 2,
+    "files.exclude": {
+      ".vscode": true,
+      "**/coverage": true,
+      "**/node_modules": true
+    },
+    "files.trimTrailingWhitespace": true,
+    "editor.formatOnSave": true,
+    "prettier.configPath": ".prettierrc.js",
+    "[typescriptreact]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+      "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "editor.codeActionsOnSave": null,
+  }

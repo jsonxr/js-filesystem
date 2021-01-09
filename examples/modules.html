@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <script type="module">
+      import { createFileSystem } from '/lib/filesystem.js';
+      const fs = createFileSystem();
+
+      window.save = async function save() {
+        const text = await document.getElementById('content').value;
+        await fs.set('test', text)
+        document.getElementById('content').value = '';
+      }
+      window.get = async function get() {
+        const text = await fs.get('test')
+        document.getElementById('content').value = text;
+      }
+      window.remove = async function remove() {
+        await fs.remove('test');
+        document.getElementById('content').value = '';
+      }
+    </script>
+  </head>
+  <body>
+    Content:<br/>
+    <textarea id="content" style="width: 400; height: 200;"></textarea><br/>
+    Actions:<br/>
+    <button onclick="save()">save</button>
+    <button onclick="get()">get</button>
+    <button onclick="remove()">remove</button>
+  </body>
+</html>
