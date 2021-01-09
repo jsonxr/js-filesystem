@@ -1,6 +1,6 @@
 {
   "name": "@jsonxr/filesystem",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Universal js library for reading/writing files. In the browser, the read/write is to the indexdb system. In node, it is to the file system.",
   "main": "lib/cjs/index.js",
   "module": "lib/index.js",
