@@ -1,5 +1,7 @@
 {
   "compilerOptions": {
+    "rootDir": "src",
+    "outDir": "lib",
     "module": "ES2015",
     "target": "es2017",
     "declaration": true,
@@ -11,8 +13,8 @@
     "moduleResolution": "node",
     "forceConsistentCasingInFileNames": true,
     "types": ["jest", "node"],
-    "lib": ["esnext"]
+    "lib": ["esnext", "dom"]
   },
 
-  "exclude": ["node_modules"]
+  "include": ["src/**/*"]
 }

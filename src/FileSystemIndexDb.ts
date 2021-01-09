@@ -12,10 +12,10 @@ const createFileSystem = (): FileSystem => {
     return (await db).get('keyval', key);
   };
   const set = async (key: string, val: string) => {
-    return (await db).put('keyval', val, key);
+    (await db).put('keyval', val, key);
   };
   const remove = async (key: string) => {
-    return (await db).delete('keyval', key);
+    (await db).delete('keyval', key);
   };
 
   return { get, set, remove };
